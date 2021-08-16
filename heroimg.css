@@ -93,6 +93,9 @@ body{
     max-width:40px;
    
 }
+.head__nav-logo:hover{
+    cursor:pointer;
+}
 .head__nav-list{
     display:flex;
     justify-content:space-evenly;
@@ -111,8 +114,14 @@ body{
     list-style:none;
 }
 
+.head__nav-list--item a:hover{
+    color:#ccc;
+    background-color:rgb(56, 185, 250);
+}
+
 .head__nav-list--item a{
     text-decoration:none;
     color:#fff;
+    padding:15px 50px;
 }
 
