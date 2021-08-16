@@ -78,6 +78,9 @@ body{
 }
 
 .head{
+    position:sticky;
+    top:0;
+    z-index:100;
     width:100%;
     height:auto;
     background:#0af;
