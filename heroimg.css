@@ -60,29 +60,36 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    height:4em;
+    flex-flow:column  wrap;
+    height:auto;
+    width:100%;
     background-color:#555;
+    
    
     
 }
 .footer-text{
     padding:0;
     margin:0;
+    padding-top:20px;
     color:#fff;
     
 
 }
 
 .head{
-    height:3em;
+    width:100%;
+    height:auto;
     background:#0af;
     
 }
 .head__nav{
     display:flex;
     justify-content:space-between;
+    align-items:center;
     flex-flow:row wrap;
     height:100%;
+    width:100%;
 }
 .logo__container{
     display:flex;
@@ -123,5 +130,20 @@ body{
     text-decoration:none;
     color:#fff;
     padding:15px 50px;
+}
+@media screen and (max-width:700px){
+    .head__nav{
+        flex-direction:column;
+    }
+    .head__nav-list{
+        flex-direction:column;
+        margin:5px;
+    }
+    .head__nav-list--item a{
+        display:flex;
+        padding:5px;
+        margin-bottom:10px;
+        
+    }
 }
 
